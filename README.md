@@ -26,7 +26,7 @@ A script velocity_server.py was created which can perform forward as well as inv
 
 Now that all the robot is away from singular configration and velocity controllers have been defined, a constant velocity input along the y direction is given. As a result, robot traces a straight line path along the y direction. This, along with the MATLAB plot of reference vs actual joint velocities can be seen below.
 
+![video](video.gif)
 
 
-</p>
 
