@@ -12,5 +12,21 @@ Using the fk.py script, forward kinematics of the robot was solved. The script l
 
 ik_server.py calculates the joint values for the given values of position and orientation of the end-effector.
 
-The use of socially assistive robots in Applied Behavioral Analysis (ABA) therapy has proven to help therapists focus more on the session rather than keeping a track of the child's progress. For this project, we consider ABA therapy sessions conducted for Autism Spectrum Disorder. The scenario considered here involves the use of PABI (Penguin for Autism Behavioral Intervention), a socially assistive robot created specifically to assist  in ABA therapies. It is equipped with Intel REalSense camera which is used for data recording, data logging and further analysis. Face and pose recognition can help determine behavioral aspects of patients during ABA therapy. 
+## Position control
+
+To control each of the joints, ros_control package was used. PID control was implemented and rqt_gui was used to visualize joint motion with the corresponding PID values. These values can be adjusted and published directly to the joint position control commands. PID values were manually tuned for every joint assuring minimum overshoot and minimum time required for the robot to reach the target position.
+
+Using these joint controllers, robot was moved far away from its singular configuration to ensure maneuverability.
+
+## Velocity Control
+
+A script velocity_server.py was created which can perform forward as well as inverse velocity kinematics based on the service called. For each joint, a velocity controller was defined in the rrbot_control.launch file. PID values for each velocity controller were assigned in the rrbot_control.yaml file. The ros_control package reads the velocity data and translates it into joint velocities using Jacobian. These joint velocity values are then used for robot simulation. 
+
+## Path tracing 
+
+Now that all the robot is away from singular configration and velocity controllers have been defined, a constant velocity input along the y direction is given. As a result, robot traces a straight line path along the y direction. This, along with the MATLAB plot of reference vs actual joint velocities can be seen below.
+
+
+
+</p>
 
