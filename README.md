@@ -12,7 +12,7 @@ Using the fk.py script, forward kinematics of the robot was solved. The script l
 
 ik_server.py calculates the joint values for the given values of position and orientation of the end-effector.
 
-## Position control
+## Position Control
 
 To control each of the joints, ros_control package was used. PID control was implemented and rqt_gui was used to visualize joint motion with the corresponding PID values. These values can be adjusted and published directly to the joint position control commands. PID values were manually tuned for every joint assuring minimum overshoot and minimum time required for the robot to reach the target position.
 
@@ -22,7 +22,7 @@ Using these joint controllers, robot was moved far away from its singular config
 
 A script velocity_server.py was created which can perform forward as well as inverse velocity kinematics based on the service called. For each joint, a velocity controller was defined in the rrbot_control.launch file. PID values for each velocity controller were assigned in the rrbot_control.yaml file. The ros_control package reads the velocity data and translates it into joint velocities using Jacobian. These joint velocity values are then used for robot simulation. 
 
-## Path tracing 
+## Path Tracing 
 
 Now that all the robot is away from singular configration and velocity controllers have been defined, a constant velocity input along the y direction is given. As a result, robot traces a straight line path along the y direction. This, along with the MATLAB plot of reference vs actual joint velocities can be seen below.
 
