@@ -35,6 +35,9 @@ Now that all the robot is away from singular configration and velocity controlle
 ## References
 
 <a id="1">[1]</a> 
-Modular Social Assistive Robot Framework , Jacob Bader,Tyler Dubuke,Jonathan Sanchez,Raymond Schade, 2020 
+Osrf. “URDF in Gazebo.” Gazebo, http://gazebosim.org/tutorials?tu t=ros_urdf.
 
+<b id="1">[2]</b> 
+Layhue, Colton. “Inverse Kinematics - SCARA Manipulator.” Youtube, 8 Mar. 2021, 
+https://m.youtube.com/watch?v=c5Z4h7gvIYA&t=868s.
 
