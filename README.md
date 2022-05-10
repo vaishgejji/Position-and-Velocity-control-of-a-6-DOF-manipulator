@@ -4,6 +4,10 @@
 
 The simulation was created in Gazebo. To read the joint values from Gazebo, Joint State Publisher GUI was included in the launch file. Using these sliders, joint values can be manually set and are then published to the joint_state topic. 
 
+<p align = "center">
+<img src="images/scara.png" width="300" height="300">
+</p>
+
 ## Forward Kinematics
 
 Using the fk.py script, forward kinematics of the robot was solved. The script listens to the joint_state topic and calculates the end-effector position using the homogenous transformation matrix.
@@ -28,5 +32,9 @@ Now that all the robot is away from singular configration and velocity controlle
 
 ![video](video.gif)
 
+## References
+
+<a id="1">[1]</a> 
+Modular Social Assistive Robot Framework , Jacob Bader,Tyler Dubuke,Jonathan Sanchez,Raymond Schade, 2020 
 
 
