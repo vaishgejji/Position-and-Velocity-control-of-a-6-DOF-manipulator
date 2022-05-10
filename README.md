@@ -32,6 +32,7 @@ Now that all the robot is away from singular configration and velocity controlle
 
 ![video](video.gif)
 
+
 ## References
 
 <a id="1">[1]</a> 
